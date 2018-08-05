@@ -10,7 +10,6 @@ import org.openqa.selenium.WebElement;
 public class WeightWatchersMeetingPage {
 
 	WebDriver driver = new FirefoxDriver();
-
 	/*
 	 * Method to return current page title
 	 */
@@ -29,10 +28,10 @@ public class WeightWatchersMeetingPage {
 		element.sendKeys("10011");
 		driver.findElement(By.className("btn.btn")).click();
 
-		List<WebElement> locationList=driver.findElements(By.className("location_name"));
+		List<WebElement> locationList=driver.findElements(By.className("location__name"));
 		System.out.println(locationList.get(0));
 
-		List<WebElement> locationDistance=driver.findElements(By.className("location_name"));
+		List<WebElement> locationDistance=driver.findElements(By.className("location__distance"));
 		System.out.println(locationDistance.get(0));
 
 		locationList.get(0).click();

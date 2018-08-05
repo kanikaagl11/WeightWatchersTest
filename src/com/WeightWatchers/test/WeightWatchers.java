@@ -46,7 +46,7 @@ public class WeightWatchers {
 	
 	public static void main(String[] args) {
 		
-		doesFileExist("/test.txt");
+		doesFileExist("test.txt");
 		
 	}
 }
